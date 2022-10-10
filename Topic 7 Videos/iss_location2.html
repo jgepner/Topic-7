@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Where is the ISS?</title>
+
+  <!--    add 2 Leaflet links (before my script link) to draw map-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+          integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+          crossorigin=""></script>
+
+  <!--    add link to my stylesheet-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!--  add a link to js page-->
+  <!--  async means load the script while page is loading; load now-->
+  <!--  defer means don't run until the whole HTML is loaded-->
+  <script async defer src="fetch2.js"></script>
+</head>
+<body>
+
+<h1>Where is the ISS?</h1>
+
+<div>
+  <!--        my turn:  add date and time-->
+  <!--        <p>At <span id="current-date"></span> <span id="current-time"></span> ISS is over the following coordinates:</p>-->
+  <p id="time"></p>
+  <p>ISS Latitude: <span id="iss-lat"></span></p>
+  <p>ISS Longitude: <span id="iss-long"></span></p>
+</div>
+
+<div id="iss-map"></div>
+
+<p>Icon by iss by Viktor Korobkov from <a href="https://thenounproject.com/browse/icons/term/iss/" target="_blank" title="iss Icons">Noun Project</a> </p>
+
+</body>
+</html>
