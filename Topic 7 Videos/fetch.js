@@ -9,7 +9,7 @@ let timeIssLocationFetched = document.querySelector('#time')
 let update = 10000 // make update interval a variable
 let issMarker  //declare variable for marker
 let icon = L.icon( {
-    iconUrL: 'iss_icon.png',
+    iconUrl: 'iss_icon.png',
     iconSize: [50, 50],
     iconAnchor: [25, 25]  // have icon centered over point
 })
